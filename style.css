@@ -154,7 +154,7 @@ hr {
 }
 .herotitle:hover{
     color: #000000;
-    background-image: url(galtitle.jpg);
+    background-image: url(img/galtitle.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     text-shadow: 1px 1px rgb(255, 255, 255);
