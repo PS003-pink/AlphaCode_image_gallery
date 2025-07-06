@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="logo">IG</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#upload-section">Upload</a></li>
+                <li><a href="#about-us">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+             <h2 class="herosub">This is Image <h1 class="herotitle">Gallery</h1></h2>
+            <p class="hero-description"><span id="typewriter"></span></p>
+            
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h2>Gallery</h2>
+            <hr>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="city">City</button>
+                <button class="filter-btn" data-filter="animals">Animals</button>
+                <button class="filter-btn" data-filter="person">People</button>
+                <button class="filter-btn" data-filter="user">User Uploads</button>
+            </div>
+            <div class="image-grid">
+                <img src="img/beautiful_nature (1).jpeg" alt="nature" data-category="nature">
+                <img src="img/beautiful_nature.jpeg" alt="nature" data-category="nature">
+                <img src="img/snowy_street_scene_in_berlin.jpeg" alt="Third snowy street scene in Berlin" data-category="city">
+                <img src="img/profile_image.jpeg" alt="Close-up portrait of a person" data-category="person">
+                <img src="img/dog.jpeg" alt="Dog food in a bowl" data-category="animals">
+                <img src="img/profile_image (1).jpeg" alt="progile image" data-category="person">
+                <img src="img/newyork_in_night.jpeg" alt="newyork" data-category="city">
+                <img src="img/party_at_disco.jpeg" alt="disco party" data-category="person">
+                <img src="img/beautiful_cat.jpeg" alt="cat" data-category="animal">
+                <img src="img/human_with_nature.jpeg" alt="girl in nature" data-category="person">
+                <img src="img/dubai.jpeg" alt="dubai" data-category="city">
+                <img src="img/men_with_nature.jpeg" alt="men_with_nature" data-category="nature">
+                <img src="img/animal.jpeg" alt="lion" data-category="animals">
+                <img src="img/beautiful_nature (2).jpeg" alt="nature" data-category="nature">
+                <img src="img/girl (1).jpeg" alt="Portrait of a girl" data-category="person">
+            </div>
+        </section>
+
+        <section id="upload-section" class="upload-section">
+            <h2>Upload Your Image</h2>
+            <hr>
+            <div class="upload-subtitle">Start Sharing Your Vision →</div>
+            <label for="uploadInput" class="upload-button">
+                <input type="file" id="uploadInput" accept="image/*">
+                
+                <span style="background-color: rgba(0, 0, 0, 0.282);" >Choose an Image to Upload</span>
+            </label>
+        </section>
+
+        <section id="about-us" class="about-section">
+            <h2>About Us</h2>
+            <hr>
+            <div class="about-us">
+                <h1 class="about-tagline">Where every photo tells a story.</h1>
+                <p>Image Gallery brings together a global community to celebrate photography. Every photo tells a story, and our platform lets you share, discover, and appreciate them. Whether you’re a beginner, a pro, or an admirer, IG is your space to explore, get inspired, and showcase your vision.</p>
+               
+            </div>
+        <div class="about-ct">
+            <h3><strong> Connect With Us</strong></h3><hr>
+            <p>Have questions, feedback, or just want to say hello? We'd love to hear from you!</p>
+                <ul class="social-links">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzCbVdcQpJbcfWNXQkLSKdMcvNZmhvnFSwRFcxclPqHgjKfjfWVbCdTzKzBFcknHQLNKnNw" target="_blank" rel="noopener noreferrer"><img src="img/email.png" alt="email">priyasahu0324@email.com</a></li>
+      <li><a href="https://www.linkedin.com/in/priyasahuu/" target="_blank" rel="noopener noreferrer"><img src="img/linkedin.png" alt="linkedin">priyasahuu</a></li>
+      <li><a href="https://github.com/PS003-pink" target="_blank" rel="noopener noreferrer"><img src="img/github.png" alt="github">PS003-pink</a></li>
+                </ul>
+        
+        </div>
+        </section>
+        <footer>
+            <p>&copy; 2025 Image Gallery. All rights reserved.</p>
+        </footer>    
+    </main>
+
+    <div class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img src="" class="lightbox-img" alt="Lightbox Image">
+        <div class="lightbox-nav">
+            <button id="prevBtn" aria-label="Previous image">&#10094; Previous</button>
+            <button id="nextBtn" aria-label="Next image">Next &#10095;</button>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
